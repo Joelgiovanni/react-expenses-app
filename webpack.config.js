@@ -1,5 +1,5 @@
 const path = require('path');
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = (env) => {
   const isProduction = env === 'production';
@@ -36,7 +36,7 @@ module.exports = (env) => {
         })
       }]
     },
-    plugins : [
+    plugins: [
       CSSExtract
     ],
     devtool: isProduction ? 'source-map' : 'inline-source-map',
@@ -45,4 +45,4 @@ module.exports = (env) => {
       historyApiFallback: true
     }
   };
-}
+};
